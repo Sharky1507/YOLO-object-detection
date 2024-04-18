@@ -1,4 +1,3 @@
-# Object detection web app with YOLOv8, OpenCV, Streamlit
 import cv2
 import streamlit as st
 from ultralytics import YOLO
