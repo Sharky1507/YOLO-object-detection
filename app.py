@@ -18,7 +18,7 @@ def app():
             bin_file  = uploaded_file.read()
             with open(input_file,"wb") as temp:
                 temp = temp.write(bin_file)
-            video = cv2.VideoCapture('video.mp4') 
+            video = cv2.VideoCapture('[PATH TO YOUR VIDEO]') 
             width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
             height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
             fps = int(video.get(cv2.CAP_PROP_FPS))
