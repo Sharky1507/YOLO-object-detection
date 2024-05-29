@@ -1,1 +1,1 @@
-- link: https://sharky1507-yolo-object-detection-app-t1cmdq.streamlit.app/
+- Link: https://sharky1507-yolo-object-detection-app-t1cmdq.streamlit.app/
