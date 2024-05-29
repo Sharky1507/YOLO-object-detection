@@ -84,7 +84,7 @@ thop==0.1.1.post2209072238
 toml==0.10.2
 toolz==0.12.1
 torch==1.13.1
-torchvision==0.14.1
+torchvision==0.15.2
 tornado==6.2
 tqdm==4.66.2
 typing_extensions==4.7.1
