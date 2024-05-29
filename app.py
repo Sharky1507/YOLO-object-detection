@@ -7,7 +7,7 @@ def app():
     st.subheader("Powered by YOLOV8")
     st.write("Welcome!")
     model = YOLO("yolov8n.pt")
-    objects  = list(model.names.values())
+    objects  = list(model.names.values()) 
     with st.form("my_form"):
         uploaded_file = st.file_uploader("Upload video", type = ['mp4'])
         selected_objects = st.multiselect('choose objects to detect from',objects,default = ['person'])
