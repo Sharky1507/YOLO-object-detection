@@ -2,6 +2,7 @@ import cv2
 import streamlit as st
 from ultralytics import YOLO
 import base64
+import os 
 
 def app():
     st.header("Object Detection Web App")
