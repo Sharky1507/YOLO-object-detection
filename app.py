@@ -26,7 +26,9 @@ def app():
             height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
             fps = int(video.get(cv2.CAP_PROP_FPS))
             fourcc = cv2.VideoWriter_fourcc(*'X264') 
-            output_path = input_file.split('.')[0] + '_output.mp4'
+            output_dir = "output_videos"  
+            os.makedirs(output_dir, exist_ok=True) 
+            output_path = os.path.join(output_dir, f"{input_file.split('.')[0]}_output.mp4")
             out_video = cv2.VideoWriter(output_path, int(fourcc), fps, (width, height))
 
             with st.spinner("Processing video.."):
